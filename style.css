@@ -65,4 +65,35 @@ a:hover{
     .checkbtn{
         display: block;
     }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        background: #2c3e50;
+        text-align: center;
+        left:  -100%;
+        transition: all .5s;
+        opacity: 0.7;
+    }
+    nav ul li{
+        display: block;
+        
+    }
+    nav ul li a{
+        font-size: 18px;
+       
+        }
+    a:hover{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+section{
+    background: url(img/pexels-cottonbro-3945673.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 8px);
 }
